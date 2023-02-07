@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    background-color: #FFF;
+    line-height: 1.42857143;
+}
+
+.top-hiden,.header {
+    display: flex;
+    justify-content: center;
+    min-height: 88px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+   
+}
+
+.header-logo img {
+    height: 75px !important;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.header-menu .menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li:hover a {
+    background-color: #3dc2ff;
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.15s ease;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 34px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.header-contact {
+    display: flex;
+    padding: 22px 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.header-contact .logo-phone {
+    padding: 0 15px;
+    font-size: 30px;
+    color: #D91A5D;
+}
+
+.text-phone .text {
+    color: rgb(70, 195, 252);
+}
+
+.text-phone a {
+    display: inline-block;
+    color: rgb(217, 26, 93);
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.text-phone:hover a {
+    text-decoration: underline;
+}
+
+/* menu-respon */
+
+.menu-logo {
+    font-size: 30px;
+    color: #46c3fc;
+}
+
+.header-logo-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-after {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 400;
+    display: none;
+}
+
+.menu-new {
+    background-color: #46C3FC;
+    display: none;
+}
+
+.menu-new a {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.menu-new li:hover {
+    background-color: rgb(202, 128, 140);
+    transition: 0.5s ease;
+}
+
+.show {
+    display: block;
+}
+
+.img-header img {
+    max-width: 100%;
+}
+
+.main {}
+
+.main-header {
+    background-color: #f9f9f9;
+}
+
+.main .main-header h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 20px 0 50px;
+    line-height: 1.425;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #f9f9f9;
+}
+
+.tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+
+}
+
+.tour-list .tour-item {
+    width: calc(100%/3);
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+
+}
+
+.tour-img {
+    position: relative;
+}
+
+.tour-img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 7px;
+}
+
+.tour-img .hiden-btn {
+    background: linear-gradient(to bottom, #009DEB 0%, rgba(103, 240, 255, .8) 100%);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    padding-top: 30%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.tour-img:hover .hiden-btn {
+    display: block;
+}
+
+.tour-img:hover .hiden-btn a {
+    text-decoration: underline;
+    border: 2px #FFF solid;
+    border-radius: 3px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tour-infor {
+    padding: 20px;
+}
+
+.tour-infor a {
+    font-weight: 700;
+    color: #354060;
+}
+
+.tour-infor a:hover {
+    text-decoration: underline;
+}
+
+.tour-infor .tour-description {
+    margin-bottom: 10px;
+}
+
+.tour-infor .tour-price {
+    color: #E93550;
+    font-size: 16px;
+}
+
+
+.footer {
+    background-color: #E8ECF5;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+}
+
+.footer-item {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-item h3 {
+    margin: 20px 0 10px;
+    font-weight: 600;
+    line-height: 1.425;
+    font-size: 24px;
+}
+
+.footer-item p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+p strong {
+    font-weight: 700;
+}
+
+.footer-item .btn {
+    font-weight: 400;
+    border: 1px #354060 solid;
+    padding: 3px 3px;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    margin: 3px;
+    color: #354060;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer-item .btn:hover {
+    text-decoration: underline;
+}
+
+.end {
+    width: 100%;
+    background: #C4CDE2;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.end .end-container {
+    margin: 0 auto;
+    width: 75vw;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .content .tour-item {
+        width: 50%;
+    }
+
+    .tour-item:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    .end .end-container {
+        width: 767px;
+    }
+
+    .footer-content {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* header */
+    .header-logo img {
+        margin-right: 0;
+    }
+.top-hiden{
+    display: none !important;
+}
+    .header .header-contact {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header {
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .img-header img {
+        margin-top: 0;
+    }
+
+    .header .header-menu {
+        display: none;
+    }
+
+    .header-logo-menu {
+        display: flex;
+    }
+
+    .menu-after {
+        display: block;
+    }
+
+    /*  */
+
+    .container .list-item {
+        width: 90vw;
+    }
+
+    .content .tour-item {
+        width: 100%;
+    }
+
+    .footer-item {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .footer-item:first-child p {
+        margin-bottom: 0;
+    }
+
+    .end .end-container {
+        max-width: 90%;
+    }
+
+
+}
